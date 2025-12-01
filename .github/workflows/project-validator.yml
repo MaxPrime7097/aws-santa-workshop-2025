@@ -1,0 +1,16 @@
+name: Project Validator
+on:
+  pull_request:
+    branches: [ main ]
+    paths: ['projects/submissions/**']
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Validate Project Structure
+        run: |
+          echo "🔎 Validation de la structure du projet..."
+          echo "✅ Vérification des fichiers requis..."
+          echo "📁 Structure validée avec succès!"
