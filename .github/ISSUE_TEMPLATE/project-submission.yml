@@ -1,0 +1,30 @@
+name: 🎅 Soumission de Projet
+description: Soumettre votre projet pour le Santa's Workshop Challenge
+title: "[PROJECT] "
+labels: ["submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        🎄 Félicitations pour avoir complété votre projet !
+  - type: input
+    id: participant-name
+    attributes:
+      label: Nom complet
+      placeholder: Votre nom
+    validations:
+      required: true
+  - type: input
+    id: project-name
+    attributes:
+      label: Nom du projet
+      placeholder: Ex: Santa's Gift Tracker
+    validations:
+      required: true
+  - type: textarea
+    id: project-description
+    attributes:
+      label: Description du projet
+      placeholder: Expliquez ce que votre projet fait...
+    validations:
+      required: true
