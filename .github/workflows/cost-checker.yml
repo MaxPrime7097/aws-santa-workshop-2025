@@ -1,0 +1,14 @@
+name: Cost Checker
+on:
+  schedule:
+    - cron: '0 12 * * *'  # Tous les jours à midi
+  workflow_dispatch:
+
+jobs:
+  check-costs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check AWS Credits
+        run: |
+          echo "🔍 Vérification des coûts AWS..."
+          # Script de vérification des crédits à implémenter
